@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AK Insurance</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* NAVIGATION */
+nav {
+    background: #001f4d;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav img {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+}
+
+nav .logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header {
+    background: linear-gradient(to right, #ff0000, #ffffff, #0000cc);
+    text-align: center;
+    padding: 80px 20px;
+    color: #001f4d;
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #ff0000;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    color: #001f4d;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 8px solid #ff0000;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 6px solid #0000cc;
+}
+
+.contact-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 8px solid #0000cc;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+form button {
+    padding: 14px 25px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #001f4d;
+    color: white;
+    margin-top: 40px;
+}
+
+#chatBtn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #ff0000;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION WITH LOGO -->
+<nav>
+    <div class="logo-area">
+        <img src="https://raw.githubusercontent.com/amberkhan3419-hub/ak-insurance-website/main/generated-image-1%20(1).png" alt="AK Insurance Logo">
+        <div class="logo-text">AK Insurance</div>
+    </div>
+    <div>Online Only</div>
+</nav>
+
+<header>
+    <h1>AK Insurance</h1>
+    <p>Auto • Commercial • Contractors • Workers Comp Specialists</p>
+    <a href="#quote" class="cta-btn">Get a Free Quote</a>
+</header>
+
+<section>
+<h2>Industries We Serve</h2>
+
+<div class="grid">
+    <div class="box">
+        <h3>Auto Insurance</h3>
+        <p>Affordable coverage for personal and commercial vehicles.</p>
+    </div>
+
+    <div class="box">
+        <h3>Commercial Insurance</h3>
+        <p>Protect your business with liability, property, and risk management.</p>
+    </div>
+
+    <div class="box">
+        <h3>Contractors Insurance</h3>
+        <p>Coverage for electricians, painters, builders, and trades.</p>
+    </div>
+
+    <div class="box">
+        <h3>Workers Compensation</h3>
+        <p>Solid protection for your employees and business.</p>
+    </div>
+</div>
+</section>
+
+<section>
+<h2>Gallery</h2>
+
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" />
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" />
+    <img src="https://images.unsplash.com/photo-1581091012184-5c6a8b8f9f7f" />
+</div>
+</section>
+
+<section>
+<h2>Testimonials</h2>
+
+<div class="testimonial">
+    “AK Insurance helped me insure my work trucks fast and at a great price. Amber is amazing!”
+</div>
+
+<div class="testimonial">
+    “Reliable, honest, and easy to work with. Best insurance experience I’ve had.”
+</div>
+</section>
+
+<section id="quote">
+<h2>Online Quote Request</h2>
+
+<div class="contact-box">
+<form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="text" placeholder="Phone Number" required>
+    <input type="email" placeholder="Email Address" required>
+    <textarea rows="5" placeholder="What type of insurance do you need?" required></textarea>
+    <button type="submit">Request Quote</button>
+</form>
+</div>
+</section>
+
+<section>
+<h2>Make an Appointment</h2>
+
+<div class="contact-box">
+    <p>Call: 713-271-8400</p>
+    <p>Or schedule online below:</p>
+
+<form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="text" placeholder="Preferred Date" required>
+    <textarea placeholder="What would you like to discuss?" required></textarea>
+    <button type="submit">Book Appointment</button>
+</form>
+</div>
+</section>
+
+<section>
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+    <p><strong>Agent:</strong> Amber Khan</p>
+    <p><strong>Phone:</strong> 713-271-8400</p>
+    <p><strong>Email:</strong> <strong>akinsurance@yahoo.com</strong></p>
+    <p><strong>Hours:</strong> Mon–Fri 10am–5pm (Closed weekends)</p>
+</div>
+</section>
+
+<footer>
+© 2024 AK Insurance — Online Only — All rights reserved.
+</footer>
+
+<div id="chatBtn">Chat</div>
+
+</body>
+</html>
